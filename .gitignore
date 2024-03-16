@@ -1,4 +1,4 @@
 dist/
 build/
 *egg-info/
-pycx/__pycache__
+pycx3/__pycache__
