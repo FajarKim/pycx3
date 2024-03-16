@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pycx3",
-    version="1.0.0",
+    version="1.0.3",
     description="Compiler Python version 3 source file to binary",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
