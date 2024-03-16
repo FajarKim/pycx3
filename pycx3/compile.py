@@ -1,3 +1,18 @@
+"""
+pycx3 Compilation Module
+
+This module provides functions for compiling Python version 3
+source files using Cython.
+
+Copyright (c) 2024 Rangga Fajar Oktariansyah.
+All rights reserved.
+
+Note:
+  This module is designed to work with Python 3.8 and above.
+
+For more information and updates, visit: https://github.com/FajarKim/pycx3
+"""
+
 import os
 import sysconfig
 import subprocess

@@ -1,6 +1,24 @@
-from typing import Tuple
+"""
+pycx3 Compiler CLI Tool
+
+This tool provides a command-line interface for compiling and
+running Python version 3 source files using Cython.
+
+Copyright (c) 2024 Rangga Fajar Oktariansyah.
+All rights reserved.
+
+Note:
+  This tool is designed to work with Python 3.8 and above.
+
+Usage:
+  pycx3 source_file.py  # Compile the specified Python source file.
+
+For more information and updates, visit: https://github.com/FajarKim/pycx3
+"""
+
 import subprocess
 import sys
+from typing import Tuple
 from .compile import compile as compile_
 
 def parse_args() -> Tuple[str, list]:
@@ -11,10 +29,10 @@ def parse_args() -> Tuple[str, list]:
         Tuple[str, list]: A tuple containing the source file path and remaining command-line arguments.
     """
     if len(sys.argv) < 2:
-        # Print error message and exit if no input files are provided.
         RED = "\033[91m"
         ENDC = "\033[0m"
-        print(f"pycx: {RED}fatal error:{ENDC} no input files")
+        # Print error message and exit if no input files are provided.
+        print(f"pycx3: {RED}fatal error:{ENDC} no input files")
         print("compilation terminated.")
         sys.exit(-1)
     sys.argv.pop(0)
